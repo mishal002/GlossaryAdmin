@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category id"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/CategoryIdEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_centerInParent="true"
+        android:hint="Enter id"
+        android:inputType="textWebEmailAddress"
+        android:textColorHighlight="#FFB952" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CategoryIdEdtTxt"
+        android:layout_centerVertical="true"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/AddCategoryEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_centerInParent="true"
+        android:hint="Enter Category"
+        android:textColorHighlight="#FFB952" />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddCategoryEdt"
+        android:layout_centerInParent="true"
+        android:elevation="5sp"
+        android:text="Add"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+
+</RelativeLayout>

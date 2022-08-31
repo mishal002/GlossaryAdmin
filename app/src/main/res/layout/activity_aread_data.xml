@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/my_drawer_layout"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Activity.A_Read_Data">
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <ProgressBar
+          android:id="@+id/ps_bar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:outlineAmbientShadowColor="@color/black"
+          android:layout_centerInParent="true"/>
+
+      <RelativeLayout
+          android:id="@+id/r1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#F2D6BD">
+
+
+          <ImageView
+              android:id="@+id/add_category_btn"
+              android:layout_width="@dimen/_22sdp"
+              android:layout_height="@dimen/_22sdp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:layout_marginEnd="@dimen/_10sdp"
+              android:layout_marginBottom="@dimen/_10sdp"
+              android:src="@drawable/add_btn" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="All Product List"
+              android:textColor="#401910"
+              android:textSize="@dimen/_18sdp"
+              android:textStyle="bold" />
+
+          <ImageView
+              android:id="@+id/menu_btn"
+              android:layout_width="@dimen/_22sdp"
+              android:layout_height="@dimen/_22sdp"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:layout_marginEnd="@dimen/_10sdp"
+              android:layout_marginBottom="@dimen/_10sdp"
+              android:src="@drawable/menu_open" />
+
+      </RelativeLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/RvView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/r1"
+          android:layout_marginStart="@dimen/_5sdp"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:layout_marginEnd="@dimen/_5sdp"
+          android:layout_marginBottom="@dimen/_5sdp" />
+
+      <RelativeLayout
+          android:id="@+id/Create_list_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_margin="@dimen/_10sdp"
+          android:layout_alignParentBottom="true">
+
+          <ImageView
+              android:id="@+id/Create_list_img"
+              android:layout_width="@dimen/_70sdp"
+              android:layout_height="@dimen/_70sdp"
+              android:src="@drawable/createbutton" />
+
+          <TextView
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="create list Item"
+              android:layout_below="@+id/Create_list_img"/>
+
+
+      </RelativeLayout>
+
+  </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

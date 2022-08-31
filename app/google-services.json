@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "619961711008",
+    "project_id": "glossaryadmin-93b49",
+    "storage_bucket": "glossaryadmin-93b49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619961711008:android:6197d2dc621196709d0cc5",
+        "android_client_info": {
+          "package_name": "com.example.glossaryadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619961711008-q66ltvdnlelugbcn4n4kf5hlopequ959.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.glossaryadmin",
+            "certificate_hash": "d3970fe999e50707de6a7e109d53f8963538e737"
+          }
+        },
+        {
+          "client_id": "619961711008-pfde52a07pqs5c4v0eqcl5fksn7dqlk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWLcy0I8d8z_93eFzoTFhb-TE4CVMYYwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619961711008-pfde52a07pqs5c4v0eqcl5fksn7dqlk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

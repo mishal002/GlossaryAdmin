@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AHomePage">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/insert_id_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#40FF9800"
+                    android:hint="Enter Product id"
+                    app:helperText="Enter in number format only">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/A_insert_id_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/insert_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/insert_id_edt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#40FF9800"
+                    android:hint="Enter Product Name"
+                    app:helperText="Enter in text format only">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/A_insert_name_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/insert_category_edt"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/insert_name_edt"-->
+                <!--                    android:layout_marginStart="16dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:background="#40FF9800"-->
+                <!--                    android:hint="Enter Product category"-->
+                <!--                    app:helperText="Enter in text format only">-->
+
+
+                <!--                    <com.google.android.material.textfield.TextInputEditText-->
+                <!--                        android:id="@+id/A_insert_category_edt"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content" />-->
+
+                <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/insert_name_edt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Selcet Item Category :-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/insert_name_edt"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/txt4" />
+
+                <!--        <EditText-->
+                <!--            android:id="@+id/insert_Price_edt"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/insert_category_edt"-->
+                <!--            android:hint="Price" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/insert_Price_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#40FF9800"
+                    android:hint="Enter Product Price"
+                    app:helperText="Enter in number format only">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/A_insert_Price_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/insert_des_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/insert_Price_edt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#40FF9800"
+                    android:hint="Enter Product description"
+                    app:helperText="Enter in text format only">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/A_insert_des_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/insert_img"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/relative_1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/photopicker" />
+
+            <Button
+                android:id="@+id/insert_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insert_img"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#401910"
+                android:elevation="5sp"
+                android:text="submit DATA"
+                android:textColor="#F2D6BD" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

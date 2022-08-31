@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Glossary Admin</string>
+    <string name="client">619961711008-pfde52a07pqs5c4v0eqcl5fksn7dqlk2.apps.googleusercontent.com</string>
+
+
+    <string name="selected_item">Selected item:</string>
+    <string-array name="category">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+
+</resources>
