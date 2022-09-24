@@ -17,17 +17,28 @@
         <entry key="..\:/GlossaryAdmin/app/src/main/res/layout/activity_uhome_page.xml" value="0.23645833333333333" />
         <entry key="..\:/GlossaryAdmin/app/src/main/res/layout/activity_updata_data.xml" value="0.23645833333333333" />
         <entry key="..\:/GlossaryAdmin/app/src/main/res/layout/updatedailog.xml" value="0.23645833333333333" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/drawable-v24/strike_through_line.xml" value="0.1045" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.155" />
-        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/a_showdata_itemfile.xml" value="0.25" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/drawable/offer.xml" value="0.1045" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/a_showdata_itemfile.xml" value="0.176" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_add_cart.xml" value="0.23645833333333333" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_ahome_page.xml" value="0.264" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_alogin_page.xml" value="0.23282051282051283" />
-        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_aread_data.xml" value="0.2" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_aread_data.xml" value="0.176" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_edit_data.xml" value="0.23645833333333333" />
-        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_main.xml" value="0.23282051282051283" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_ucreate_user.xml" value="0.23282051282051283" />
-        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_uhome_page.xml" value="0.23645833333333333" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_uhome_page.xml" value="0.2" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/activity_updata_data.xml" value="0.264" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/cart_itemfile.xml" value="0.264" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/dilog_add_category.xml" value="0.23282051282051283" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/fragment_category_.xml" value="0.23645833333333333" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/fragment_home_.xml" value="0.2" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/fragment_offer_.xml" value="0.176" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/fragment_profile_.xml" value="0.2" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/u_read_itemfiile.xml" value="0.2966507177033493" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/layout/user_read_itemfile.xml" value="0.23645833333333333" />
+        <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/menu/bottom_navigation.xml" value="0.23645833333333333" />
         <entry key="..\:/all project/GlossaryAdmin/app/src/main/res/menu/navigation_drawer.xml" value="0.23282051282051283" />
       </map>
     </option>

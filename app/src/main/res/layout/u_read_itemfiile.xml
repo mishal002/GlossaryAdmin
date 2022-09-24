@@ -120,46 +120,27 @@
                 android:layout_toEndOf="@+id/relative_id"
                 android:text="product description" />
 
-            <ImageView
-                android:id="@+id/delete_btn"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="@dimen/_5sdp"
-                android:src="@drawable/deleteimg" />
-
-            <ImageView
-                android:id="@+id/edit_btn"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_below="@+id/delete_btn"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:src="@drawable/editimg" />
 
             <ImageView
                 android:id="@+id/share_btn"
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
-                android:layout_below="@+id/edit_btn"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:src="@drawable/share" />
 
-            <!--            <TextView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_below="@id/edit_btn"-->
-            <!--                android:layout_alignParentEnd="true"-->
-            <!--                android:layout_marginTop="@dimen/_10sdp"-->
-            <!--                android:text="+ ADD TO CART"-->
-            <!--                android:textColor="#4CAF50"-->
-            <!--                android:textSize="@dimen/_12sdp"-->
-            <!--                android:textStyle="bold" />-->
+            <ImageView
+                android:id="@+id/cart_btn"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/share_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/addtocart" />
+
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
+
 </RelativeLayout>

@@ -12,15 +12,14 @@ import com.example.glossaryadmin.Admin_Activity.dbshowhelper
 import com.example.glossaryadmin.R
 import com.example.glossaryadmin.Admin_Activity.Updata_data
 import com.google.firebase.database.FirebaseDatabase
+import java.util.ArrayList
 
 
 class Recycleview(val activity: A_Read_Data, val list: ArrayList<dbshowhelper>) :
     RecyclerView.Adapter<Recycleview.ViewHoler>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHoler {
-        var view =
-            LayoutInflater.from(parent.context).inflate(R.layout.a_showdata_itemfile, parent, false)
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.a_showdata_itemfile, parent, false)
         return ViewHoler(view)
     }
 
@@ -67,7 +66,7 @@ class Recycleview(val activity: A_Read_Data, val list: ArrayList<dbshowhelper>) 
         return list.size
     }
 
-    class ViewHoler(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    open class ViewHoler(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var id = itemView.findViewById<TextView>(R.id.product_id_txt)
         var name = itemView.findViewById<TextView>(R.id.product_name_txt)
         var category = itemView.findViewById<TextView>(R.id.category_txt)

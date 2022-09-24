@@ -90,7 +90,7 @@ class Updata_data : AppCompatActivity() {
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
 
         }
@@ -101,7 +101,7 @@ class Updata_data : AppCompatActivity() {
 
         binding.UpdateImg.setOnClickListener {
 
-            var intent = Intent(
+            val intent = Intent(
                 Intent.ACTION_PICK,
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI
             )
@@ -122,31 +122,24 @@ class Updata_data : AppCompatActivity() {
     private fun updateImageToStorage() {
 
 
-        var file = File(image2.toString())
-
-        var storage = Firebase.storage
-
-        var storageReference = storage.reference.child("${file.name}")
-
-        var upload = storageReference.putFile(image2!!)
-
+        val file = File(image2.toString())
+        val storage = Firebase.storage
+        val storageReference = storage.reference.child("${file.name}")
+        val upload = storageReference.putFile(image2!!)
         upload.addOnSuccessListener { snapshot ->
-
             snapshot.storage.downloadUrl.addOnSuccessListener { result ->
-                var temp = result
+                val temp = result
                 updateData(temp.toString())
             }
-
         }.addOnFailureListener { error ->
-
         }
 
     }
 
     private fun updateData(uri: String) {
 
-        var firebaseDatabase = FirebaseDatabase.getInstance()
-        var databaseReference = firebaseDatabase.reference
+        val firebaseDatabase = FirebaseDatabase.getInstance()
+        val databaseReference = firebaseDatabase.reference
 
 
         val productData = dbshowhelper(
@@ -155,9 +148,9 @@ class Updata_data : AppCompatActivity() {
             category,
             binding.AUpdatePriceEdt.text.toString(),
             binding.AUpdateDesEdt.text.toString(),
-            uri
+            uri,
+            cid.toString()
         )
-
         databaseReference.child("Product").child(key!!).setValue(productData)
 
     }

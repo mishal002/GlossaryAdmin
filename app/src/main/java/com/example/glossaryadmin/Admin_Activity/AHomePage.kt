@@ -64,7 +64,8 @@ class AHomePage : AppCompatActivity() {
             binding.AInsertPriceEdt.text.toString(),
             category.toString(),
             binding.AInsertDesEdt.text.toString(),
-            uri.toString()
+            uri.toString(),
+            cid.toString()
         )
         reference.child("Product").push().setValue(m1)
     }
@@ -93,7 +94,7 @@ class AHomePage : AppCompatActivity() {
     }
 
     fun ReadCategory() {
-
+        l1.clear()
         var firebaseDatabase = FirebaseDatabase.getInstance()
         var ref = firebaseDatabase.reference
 
@@ -113,8 +114,8 @@ class AHomePage : AppCompatActivity() {
 
                     SCategory += x.child("category").getValue().toString()
 
-                    setupSpinner(SCategory)
                 }
+                setupSpinner(SCategory)
 
             }
 
@@ -154,4 +155,5 @@ data class dbhelper(
     val Category: String,
     val Description: String,
     val Image: String,
+    val cid: String,
 )

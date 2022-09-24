@@ -33,9 +33,11 @@ class A_Read_Data : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAreadDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 //       Progress bar
         binding.psBar.visibility = View.VISIBLE
-
+        /*Ads*/
         binding.addCategoryBtn.setOnClickListener {
             AddCategory()
         }
@@ -79,8 +81,6 @@ class A_Read_Data : AppCompatActivity() {
             }
         }
     }
-
-
     fun ReadData() {
 
         var firebaseDatabase = FirebaseDatabase.getInstance()
@@ -89,8 +89,6 @@ class A_Read_Data : AppCompatActivity() {
 
         ref.child("Product").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-
-                list.clear()
                 for (x in snapshot.children) {
                     var id = x.child("id").getValue().toString()
                     var name = x.child("name").getValue().toString()
@@ -98,10 +96,11 @@ class A_Read_Data : AppCompatActivity() {
                     var price = x.child("price").getValue().toString()
                     var des = x.child("description").getValue().toString()
                     var image = x.child("image").getValue().toString()
+                    var cid = x.child("cid").getValue().toString()
 
                     var key = x.key
 
-                    var dbshow = dbshowhelper(id, name, category, price, des, key, image)
+                    var dbshow = dbshowhelper(id, name, category, price, des, key, image,cid)
                     list.add(dbshow)
 
                     SCategory += x.child("category").getValue().toString()
@@ -126,13 +125,14 @@ class A_Read_Data : AppCompatActivity() {
         var Add = dialog.findViewById<Button>(R.id.AddBtn)
         var id = dialog.findViewById<EditText>(R.id.CategoryIdEdtTxt)
         var category = dialog.findViewById<EditText>(R.id.AddCategoryEdt)
-//        var CategoryId = dialog.findViewById<TextView>(R.id.CategoryID)
         var firebaseDatabase = FirebaseDatabase.getInstance()
 
         var databaseReference = firebaseDatabase.reference
 
         databaseReference.child("Category").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+
+                list.clear()
                 for (x in snapshot.children) {
 
                     var category = x.child("id").getValue().toString()
@@ -168,16 +168,12 @@ class A_Read_Data : AppCompatActivity() {
 
                 dialog.dismiss()
             }
-
-
         }
-
-
     }
 
 
     fun RvSetup(list: ArrayList<dbshowhelper>) {
-        var adapter = Recycleview(this, list)
+        var adapter = Recycleview(this@A_Read_Data, list)
         var layoutmanager = LinearLayoutManager(this)
         binding.RvView.layoutManager = layoutmanager
         binding.RvView.adapter = adapter
@@ -193,6 +189,7 @@ data class dbshowhelper(
     val des: String,
     val key: String?,
     val image: String? = null,
+    val cid : String
 
     )
 
